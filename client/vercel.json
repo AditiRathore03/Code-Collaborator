@@ -1,0 +1,13 @@
+{
+    "rewrites": [
+      { "source": "/api/socket", "destination": "/api/socket" },
+      { "source": "/socket.io/(.*)", "destination": "/api/socket" }
+    ],
+    "builds": [
+      { "src": "package.json", "use": "@vercel/node" },
+      { "src": "api/**/*.js", "use": "@vercel/edge" }
+    ],
+    "env": {
+      "REACT_APP_BACKEND_URL": "/api/socket"
+    }
+  }
