@@ -9,7 +9,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:3000", 
+    origin: "https://vercel.com/aditi-rathores-projects/code-collaborator-jwob/G1HFDhqY1sWzWiLF2jTHEyTzj8bx", 
     methods: ["GET", "POST"]
   }
 });
