@@ -29,7 +29,7 @@
     "eject": "react-scripts eject",
     "dev": "env-cmd -f .env.development react-scripts start",
     "prod": "env-cmd -f .env react-scripts start",
-    "vercel-build": "npm run build"
+    "vercel-build": "react-scripts build"
   },
   "eslintConfig": {
     "extends": [
@@ -51,5 +51,10 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
-  }
+  },
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
